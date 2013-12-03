@@ -4,7 +4,8 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
-# command to install dependencies
+  
+# commandto install dependencies
 install:
   - "pip install -r requirements.txt --use-mirrors"
   - "if [[ $TRAVIS_PYTHON_VERSION = 2.6 ]]; then pip install unittest2 --use-mirrors; fi"
